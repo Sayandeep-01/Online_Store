@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechNova Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Company Name Header -->
+  <header class="site-header">
+    <h1>SAYANDEEP'S STORE</h1>
+  </header>
+
+  <!-- Cart Icon -->
+<div class="cart-icon" id="cart-icon">
+  🛒 
+  <span id="cart-count">0</span>
+  <span id="cart-price">$0.00</span>
+</div>
+<!--Search Bar-->
+<div id="search-container" style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+  <input type="text" id="search-input" placeholder="Search products..." />
+  <button id="voice-btn" title="Voice Search 🎤">🎤</button>
+</div>
+
+<!-- Cart Panel -->
+<div id="cart-panel" class="cart-panel hidden">
+  <h3>Your Cart</h3>
+  <ul id="cart-items"></ul>
+  <div class="cart-total">
+    Total: <span id="cart-total-price">$0.00</span>
+  </div>
+  <button id="checkout-btn" disabled>Checkout</button>
+  <button id="close-cart-btn">Close</button>
+</div>
+  <!-- Product Cards -->
+  <div class="container">
+    <!-- Product 1 -->
+    <div class="product-card" data-price="99.99">
+      <img src="Headphone.jpg" alt="Product 1" />
+      <div class="info">
+        <h2>Headphones</h2>
+        <p>Wireless and noise-canceling.</p>
+        <div class="footer">
+          <span>$99.99</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card" data-price="199.0">
+      <img src="smartwatch.webp" alt="Product 2" />
+      <div class="info">
+        <h2>Smart Watch</h2>
+        <p>Track fitness and stay connected.</p>
+        <div class="footer">
+          <span>$199.00</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card" data-price="49.99">
+      <img src="bluetooth.webp" alt="Product 3" />
+      <div class="info">
+        <h2>Bluetooth Speaker</h2>
+        <p>Loud and portable.</p>
+        <div class="footer">
+          <span>$49.99</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card" data-price="59.99">
+      <img src="keyboard.jpeg" alt="Product 4" />
+      <div class="info">
+        <h2>Keyboard</h2>
+        <p>Mechanical, RGB backlit.</p>
+        <div class="footer">
+          <span>$59.99</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-card" data-price="29.99">
+      <img src="mouse.webp" alt="Product 5" />
+      <div class="info">
+        <h2>Gaming Mouse</h2>
+        <p>High DPI and ergonomic.</p>
+        <div class="footer">
+          <span>$29.99</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product-card" data-price="39.00">
+      <img src="laptop_stand.webp" alt="Product 6" />
+      <div class="info">
+        <h2>Laptop Stand</h2>
+        <p>Adjustable aluminum stand.</p>
+        <div class="footer">
+          <span>$39.00</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="product-card" data-price="149.99">
+      <img src="tablet.webp" alt="Product 7" />
+      <div class="info">
+        <h2>Tablet</h2>
+        <p>10&quot; HD screen, 64GB storage.</p>
+        <div class="footer">
+          <span>$149.99</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="product-card" data-price="39.99">
+      <img src="webcam.jpg" alt="Product 8" />
+      <div class="info">
+        <h2>Webcam</h2>
+        <p>1080p with built-in mic.</p>
+        <div class="footer">
+          <span>$39.99</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 9 -->
+    <div class="product-card" data-price="24.99">
+      <img src="desklamp.webp" alt="Product 9" />
+      <div class="info">
+        <h2>Desk Lamp</h2>
+        <p>Dimmable LED with USB port.</p>
+        <div class="footer">
+          <span>$24.99</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 10 -->
+    <div class="product-card" data-price="14.99">
+      <img src="phone_holder.webp" alt="Product 10" />
+      <div class="info">
+        <h2>Phone Holder</h2>
+        <p>Adjustable for desk or car.</p>
+        <div class="footer">
+          <span>$14.99</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
